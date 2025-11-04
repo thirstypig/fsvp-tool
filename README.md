@@ -34,3 +34,25 @@ To simplify FDA compliance under the FSVP rule by enabling suppliers and importe
 ---
 
 ## 🗂️ Folder Structure (example)
+
+---
+
+## 💻 Tech Stack
+- **Frontend:** React / Next.js  
+- **Backend:** Node.js / Express  
+- **Database:** MongoDB (planned)  
+- **Hosting (planned):** Render or Vercel  
+- **AI Layer (future):** OpenAI GPT-5 API for compliance insight
+
+---
+
+## 📅 Project Status
+- Replit prototype completed ✅  
+- Migrated to GitHub (Nov 2025) ✅  
+- Cursor setup in progress 🧠  
+
+---
+
+## 👤 Author
+Created by **Jimmy Chang (@jimmychang316)**  
+Product Management & AI Integration
