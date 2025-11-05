@@ -1,58 +1,45 @@
-# FSVP Tool 🧾
+# 🌍 FSVP Tool – Foreign Supplier Verification Platform
 
-The **FSVP Tool** (Foreign Supplier Verification Program Tool) is a web-based compliance solution designed to streamline collaboration between **foreign suppliers** and **U.S. importers/distributors** in meeting FDA’s FSVP requirements.
+**Goal:**  
+A modern SaaS platform connecting **foreign suppliers** and **U.S. importers/distributors** to simplify FDA **Foreign Supplier Verification Program (FSVP)** compliance.  
 
-Originally developed on Replit, this tool is now migrated to GitHub for continued development and integration into a scalable SaaS platform.
-
----
-
-## 🧩 Core Purpose
-To simplify FDA compliance under the FSVP rule by enabling suppliers and importers to share, verify, and track food safety documentation digitally.
+This tool allows suppliers to **upload HACCP, GMP, ISO, BRC, and third-party audit documents**, while importers manage verification and compliance in a centralized dashboard.
 
 ---
 
-## ⚙️ Key Features (MVP)
-- Two main user roles:
-  - **Foreign Supplier**: upload and manage compliance documents
-  - **U.S. Importer/Distributor**: review, verify, and manage supplier records
-- Document upload and management:
-  - HACCP  
-  - Third-Party Audits  
-  - BRC / ISO / GMP Certificates  
-- User management and access controls
-- Centralized dashboard view for compliance tracking
+## 🚀 Overview
+
+**Users:**  
+- 🏭 **Foreign Suppliers** – upload documents and maintain certification validity.  
+- 🇺🇸 **Importers/Distributors** – review, verify, and store supplier documentation.  
+- 👤 **Admins** – manage users, permissions, and compliance dashboards.  
+
+**Core MVP Features**
+- Secure document upload and tagging.  
+- SKU linkage for each product.  
+- Role-based access and dashboards.  
+- Expiration alerts and document version control.  
+- Audit-ready PDF reports.  
 
 ---
 
-## 🧠 Future Roadmap
-- AI-assisted document review and flagging  
-- Integration with FDA APIs for validation checks  
-- Automated reminders for expiring certificates  
-- Multi-language interface for international vendors  
-- Role-based reporting and audit logs  
+## 📂 Documentation
+
+| File | Description |
+|------|--------------|
+| [`/docs/PRD.md`](docs/PRD.md) | Full Product Requirements Document |
+| [`/docs/Feature_Roadmap.md`](docs/Feature_Roadmap.md) | Phase-by-phase feature roadmap |
+| [`/docs/Tech_Stack.md`](docs/Tech_Stack.md) | Technologies, architecture, and deployment plan |
+| [`/docs/User_Flows.md`](docs/User_Flows.md) | Key user flows and permission structure |
+| [`/docs/AI_Automation.md`](docs/AI_Automation.md) | AI features, OCR, translation, risk scoring |
+| [`/docs/Integrations.md`](docs/Integrations.md) | External APIs and data source connections |
+| [`/docs/Compliance_Security.md`](docs/Compliance_Security.md) | Data protection, audit logs, and compliance notes |
 
 ---
 
-## 🗂️ Folder Structure (example)
+## 🧠 Quick Start (Local Development)
 
----
-
-## 💻 Tech Stack
-- **Frontend:** React / Next.js  
-- **Backend:** Node.js / Express  
-- **Database:** MongoDB (planned)  
-- **Hosting (planned):** Render or Vercel  
-- **AI Layer (future):** OpenAI GPT-5 API for compliance insight
-
----
-
-## 📅 Project Status
-- Replit prototype completed ✅  
-- Migrated to GitHub (Nov 2025) ✅  
-- Cursor setup in progress 🧠  
-
----
-
-## 👤 Author
-Created by **Jimmy Chang (@jimmychang316)**  
-Product Management & AI Integration
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/fsvp-tool.git
+cd fsvp-tool
