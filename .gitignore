@@ -17,3 +17,10 @@ tmp/
 # Frontend builds
 .next/
 out/
+cookies.txt
+server/index.js
+server/package-lock.json
+server/package.json
+.env
+dist
+

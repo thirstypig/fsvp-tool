@@ -1,45 +1,65 @@
-# 🌍 FSVP Tool – Foreign Supplier Verification Platform
+# 🧾 FSVP Tool
 
-**Goal:**  
-A modern SaaS platform connecting **foreign suppliers** and **U.S. importers/distributors** to simplify FDA **Foreign Supplier Verification Program (FSVP)** compliance.  
+The **Foreign Supplier Verification Program (FSVP) Tool** is a web-based compliance platform that streamlines collaboration between **foreign suppliers** and **U.S. importers/distributors** to meet FDA’s FSVP requirements.
 
-This tool allows suppliers to **upload HACCP, GMP, ISO, BRC, and third-party audit documents**, while importers manage verification and compliance in a centralized dashboard.
-
----
-
-## 🚀 Overview
-
-**Users:**  
-- 🏭 **Foreign Suppliers** – upload documents and maintain certification validity.  
-- 🇺🇸 **Importers/Distributors** – review, verify, and store supplier documentation.  
-- 👤 **Admins** – manage users, permissions, and compliance dashboards.  
-
-**Core MVP Features**
-- Secure document upload and tagging.  
-- SKU linkage for each product.  
-- Role-based access and dashboards.  
-- Expiration alerts and document version control.  
-- Audit-ready PDF reports.  
+Originally built as a prototype on **Replit**, the project is now migrated to **GitHub** for active development using **Cursor**, with planned deployment on **Render** and database hosting via **Neon PostgreSQL**.
 
 ---
 
-## 📂 Documentation
+## 🎯 Core Purpose
 
-| File | Description |
-|------|--------------|
-| [`/docs/PRD.md`](docs/PRD.md) | Full Product Requirements Document |
-| [`/docs/Feature_Roadmap.md`](docs/Feature_Roadmap.md) | Phase-by-phase feature roadmap |
-| [`/docs/Tech_Stack.md`](docs/Tech_Stack.md) | Technologies, architecture, and deployment plan |
-| [`/docs/User_Flows.md`](docs/User_Flows.md) | Key user flows and permission structure |
-| [`/docs/AI_Automation.md`](docs/AI_Automation.md) | AI features, OCR, translation, risk scoring |
-| [`/docs/Integrations.md`](docs/Integrations.md) | External APIs and data source connections |
-| [`/docs/Compliance_Security.md`](docs/Compliance_Security.md) | Data protection, audit logs, and compliance notes |
+To simplify and digitize FDA compliance workflows under the **FSVP Rule (21 CFR 1 Subpart L)** by allowing suppliers and importers to:
+- Upload, review, and verify food safety documents  
+- Maintain centralized digital records  
+- Track certification validity and renewal deadlines  
 
 ---
 
-## 🧠 Quick Start (Local Development)
+## 🧩 Key Features (MVP)
 
-### 1. Clone Repository
-```bash
-git clone https://github.com/yourusername/fsvp-tool.git
-cd fsvp-tool
+### User Roles
+- **Foreign Supplier:** Upload HACCP, BRC/ISO/GMP certificates, and third-party audits  
+- **U.S. Importer / Distributor:** Review and approve supplier submissions, track compliance status  
+
+### Core Functions
+- Secure document upload and version control  
+- Compliance dashboard with status tracking  
+- Role-based access management  
+- Document categories include:  
+  - HACCP  
+  - Third-Party Audits  
+  - BRC / ISO / GMP Certificates  
+
+---
+
+## 🧠 Product Roadmap
+
+| Phase | Features | Status |
+|-------|-----------|--------|
+| MVP | User roles, upload/review, dashboard | ✅ In progress |
+| v1.1 | Supplier onboarding flow, importer notifications | 🔄 Planned |
+| v1.2 | AI-assisted document validation (OpenAI GPT-5 API) | 🚧 Research |
+| v1.3 | FDA API integration for verification | 🔄 Planned |
+| v1.4 | Automated alerts for expiring documents | 🕒 Pending |
+| v2.0 | Multi-language UI + audit log | 🧩 Future scope |
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|--------|-------------|
+| **Frontend** | React + Vite |
+| **Backend** | Node.js / Express |
+| **Database** | PostgreSQL (via Drizzle ORM) |
+| **ORM** | Drizzle |
+| **Hosting** | Render |
+| **Database Hosting** | Neon PostgreSQL |
+| **AI Layer (Future)** | OpenAI GPT-5 API |
+| **Dev Environment** | Cursor IDE + GitHub |
+| **Storage (Optional)** | Railway or Replit Object Storage |
+
+---
+
+## 📁 Folder Structure
+
