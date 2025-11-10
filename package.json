@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-"scripts": {
-  "dev": "NODE_ENV=development tsx server/index.ts",
-  "start": "NODE_ENV=production tsx server/index.ts",
-  "build": "vite build",
-  "db:push": "drizzle-kit push:pg"
-
+  "scripts": {
+    "dev": "NODE_ENV=development tsx server/index.ts",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "build": "vite build",
+    "db:push": "drizzle-kit push:pg"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
