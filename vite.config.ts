@@ -1,32 +1,21 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-
-const rootDir = process.cwd();
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
+import path from "path"
 
 export default defineConfig({
-  plugins: [
-    react(),
-    runtimeErrorOverlay(),
-    // Replit-only plugins removed for local dev
-  ],
+  root: "client",
+
+  plugins: [react()],
+
   resolve: {
     alias: {
-      "@": path.resolve(rootDir, "client", "src"),
-      "@shared": path.resolve(rootDir, "shared"),
-      "@assets": path.resolve(rootDir, "attached_assets"),
+      "@": path.resolve(__dirname, "client/src"),
+      "@shared": path.resolve(__dirname, "shared"),
     },
   },
-  root: path.resolve(rootDir, "client"),
+
   build: {
-    outDir: path.resolve(rootDir, "dist/public"),
-    emptyOutDir: true,
+    outDir: "../dist/public",
+    emptyOutDir: true, // optional but silences that warning
   },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
-});
+})

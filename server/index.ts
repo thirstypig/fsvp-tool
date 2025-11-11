@@ -90,15 +90,15 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // Use PORT from env or default to 5000
-  const port = parseInt(process.env.PORT || "5000", 10);
+// Use PORT from env (Render will set this), default to 4000 for local
+const PORT = Number(process.env.PORT || 4000);
 
-  // Simple, standard Express listen
-  const PORT = process.env.PORT ? Number(process.env.PORT) : 5173;
+app.listen(PORT, () => {
+  console.log(`[express] serving on port ${PORT}`);
+});
 
-  app.listen(PORT, () => {
-    console.log(`[express] serving on port ${PORT}`);
-  });
+
+
   
 
 })();
